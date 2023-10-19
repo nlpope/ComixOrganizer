@@ -21,17 +21,18 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="3eq-0f-2uq">
-                                <rect key="frame" x="89" y="282" width="212" height="280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="3eq-0f-2uq">
+                                <rect key="frame" x="111.66666666666669" y="338.66666666666669" width="167.00000000000006" height="167.00000000000006"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
+                            <constraint firstItem="3eq-0f-2uq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kuo-a3-SzR"/>
+                            <constraint firstItem="3eq-0f-2uq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="teB-so-8WB"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -41,6 +42,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen" width="1024" height="1024"/>
+        <image name="LaunchScreen" width="167" height="167"/>
     </resources>
 </document>
