@@ -15,6 +15,7 @@
 		400433402AE0510D00EBBB5B /* ComixOrganizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004333F2AE0510D00EBBB5B /* ComixOrganizerUITests.swift */; };
 		400433422AE0510D00EBBB5B /* ComixOrganizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400433412AE0510D00EBBB5B /* ComixOrganizerUITestsLaunchTests.swift */; };
 		4004334F2AE14EAB00EBBB5B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4004334E2AE14EAB00EBBB5B /* Launch Screen.storyboard */; };
+		409D063E2AE2F29D00ECFF1E /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D063D2AE2F29D00ECFF1E /* Comic.swift */; };
 		409E6FAB2AE1A53300BD01B7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 409E6FAA2AE1A53300BD01B7 /* Realm */; };
 		409E6FAD2AE1A53300BD01B7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 409E6FAC2AE1A53300BD01B7 /* RealmSwift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		4004333F2AE0510D00EBBB5B /* ComixOrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComixOrganizerUITests.swift; sourceTree = "<group>"; };
 		400433412AE0510D00EBBB5B /* ComixOrganizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComixOrganizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4004334E2AE14EAB00EBBB5B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		409D063D2AE2F29D00ECFF1E /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		400433232AE0510900EBBB5B /* ComixOrganizer */ = {
 			isa = PBXGroup;
 			children = (
+				409D063C2AE2F21B00ECFF1E /* Models */,
 				400433242AE0510900EBBB5B /* ComixOrganizerApp.swift */,
 				400433262AE0510900EBBB5B /* ContentView.swift */,
 				400433282AE0510C00EBBB5B /* Assets.xcassets */,
@@ -132,6 +135,14 @@
 				400433412AE0510D00EBBB5B /* ComixOrganizerUITestsLaunchTests.swift */,
 			);
 			path = ComixOrganizerUITests;
+			sourceTree = "<group>";
+		};
+		409D063C2AE2F21B00ECFF1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				409D063D2AE2F29D00ECFF1E /* Comic.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				400433272AE0510900EBBB5B /* ContentView.swift in Sources */,
+				409D063E2AE2F29D00ECFF1E /* Comic.swift in Sources */,
 				400433252AE0510900EBBB5B /* ComixOrganizerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
