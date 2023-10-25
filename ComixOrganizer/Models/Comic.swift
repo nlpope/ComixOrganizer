@@ -9,13 +9,13 @@ import Foundation
 import RealmSwift
 
 //Object = "I'm managed by realm"
-class Comic: Object, ObjectKeyIdentifiable {
+class Comic: Object, ObjectKeyIdentifiable, Codable {
     //@Persisted = "I'm stored by realm"
     @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var publisher: String
     @Persisted var title: String
-    @Persisted var volume: Int = 1
-    @Persisted var releaseDAte: Date?
+    @Persisted var issue: Int = 1
+    @Persisted var releaseDate: Date?
     @Persisted var completed: Bool = false
     
     
