@@ -6,10 +6,22 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct PublisherSelectView: View {
+    @ObservedResults(Publisher.self) var publishers
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                List() {
+                    ForEach(publishers) { publisher in
+                        Text(publisher.name)
+                    }
+                }
+                .listStyle(.plain)
+            }
+            .navigationTitle("Select a Publisher")
+        }
     }
 }
 

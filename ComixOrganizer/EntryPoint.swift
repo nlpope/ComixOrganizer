@@ -16,7 +16,15 @@ struct EntryPoint: App {
     //then on to runs & volumes in order of release date
     var body: some Scene {
         WindowGroup {
-            ComicListView()
+            TabView {
+                PublisherSelectView()
+                //ComicListView pushed onto stack after selecting from here
+                    .tabItem {
+                        Label("Publishers", systemImage: "list.dash")
+                    }
+                
+            }
+            ComicsListView()
         }
     }
 }

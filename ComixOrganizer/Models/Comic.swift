@@ -15,6 +15,7 @@ class Comic: Object, ObjectKeyIdentifiable {
     @Persisted var publisher: String
     @Persisted var title: String
     @Persisted var volume: Int = 1
+    @Persisted var releaseDAte: Date?
     @Persisted var completed: Bool = false
     
     

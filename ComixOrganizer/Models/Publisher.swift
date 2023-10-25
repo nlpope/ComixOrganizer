@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import RealmSwift
+
+class Publisher: Object, ObjectKeyIdentifiable {
+    @Persisted(primaryKey: true) var id: ObjectId
+    @Persisted var name: String
+    @Persisted var comics: List<Comic>
+}
