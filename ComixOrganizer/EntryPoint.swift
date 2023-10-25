@@ -23,8 +23,12 @@ struct EntryPoint: App {
                         Label("Publishers", systemImage: "list.dash")
                     }
                 
+                AllComicsListView()
+                    .tabItem {
+                        Label("Comics", systemImage: "list.dash")
+                    }
+                
             }
-            ComicsListView()
         }
     }
 }

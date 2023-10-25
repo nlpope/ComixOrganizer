@@ -28,6 +28,6 @@ struct ComicsListView: View {
 
 struct ComicListView_Previews: PreviewProvider {
     static var previews: some View {
-        ComicsListView(publisher: Publisher(name: "Marvel"))
+        ComicsListView(publisher: Publisher(value: "Marvel"))
     }
 }
