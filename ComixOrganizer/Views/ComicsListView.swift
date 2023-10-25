@@ -13,15 +13,15 @@ struct ComicsListView: View {
     var body: some View {
         NavigationView {
             VStack {
-                List() {
-                    ForEach(comics) { comic in
+                List {
+                    ForEach(publisher.comics) { comic in
                         Text(comic.title)
                     }
                     .listRowSeparator(.hidden)
                 }
                 .listStyle(.plain)
             }
-            .navigationTitle("Titles")
+            .navigationTitle("\(publisher) Titles")
         }
     }
 }
