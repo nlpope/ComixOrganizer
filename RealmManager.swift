@@ -32,7 +32,7 @@ class RealmManager: ObservableObject {
             }
         }
         Realm.Configuration.defaultConfiguration = config
-        print("docDir path = ",docDir.path)
+        print("docDir path = ", docDir.path)
         do {
             realm = try Realm()
         } catch {

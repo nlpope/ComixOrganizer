@@ -29,6 +29,9 @@ struct EntryPoint: App {
                     }
                 
             }
+            .onAppear {
+                print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!)
+            }
         }
     }
 }
