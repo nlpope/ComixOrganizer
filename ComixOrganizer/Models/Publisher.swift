@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class Publisher: Object, ObjectKeyIdentifiable {
+class Publisher: Object, ObjectKeyIdentifiable, Codable {
     @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var name: String
     @Persisted var comics: List<Comic>

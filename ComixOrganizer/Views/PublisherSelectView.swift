@@ -9,12 +9,14 @@ import SwiftUI
 import RealmSwift
 
 struct PublisherSelectView: View {
-    @ObservedResults(Publisher.self) var publishers
+    //static var array: [CountryInfo]
+    @ObservedResults(Publisher.self) var publishers//how to make this an array n stick json in it
     var body: some View {
         NavigationView {
             VStack {
-                List() {
-                    ForEach(publishers) { publisher in
+                List {
+                    //start here
+                    ForEach(publishers.sorted(byKeyPath: "name")) { publisher in
                         Text(publisher.name)
                     }
                 }
