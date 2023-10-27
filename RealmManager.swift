@@ -17,11 +17,26 @@ class RealmManager: ObservableObject {
     func initializeSchema(name: String) {
         let docDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let realmFileUrl = docDir.appendingPathComponent("\(name).realm")
-        let config = Realm.Configuration(fileURL: realmFileUrl, schemaVersion: 1) { migration, oldSchemaVersion in
+        let config = Realm.Configuration(fileURL: realmFileUrl, schemaVersion: 2) { migration, oldSchemaVersion in
             //OG schema version = 0 always
-            if oldSchemaVersion < 1 {
+            if oldSchemaVersion < 2 {
+               
+                migration.enumerateObjects(ofType: Publisher.className()) { oldObject, newObject in
+                    newObject!["name"] = ""
+                    newObject!["comics"] = List<Comic>.self
+                }
                 
+                
+                migration.renameProperty(onType: Comic.className(), from: "volume", to: "issue")
+                migration.renameProperty(onType: Comic.className(), from: "releaseDAte", to: "releaseDate")
             }
+        }
+        Realm.Configuration.defaultConfiguration = config
+        print("docDir path = ",docDir.path)
+        do {
+            realm = try Realm()
+        } catch {
+            print("error loading default Realm:", error)
         }
     }
 }

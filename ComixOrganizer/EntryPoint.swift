@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct EntryPoint: App {
-    
+    @StateObject var realmManager = RealmManager(name: "schema 2")
     //start @ Publisher Select View
     //then on to titles (in alpha order) under said Publisher
     //> filterable by character
