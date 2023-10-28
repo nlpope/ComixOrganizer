@@ -21,9 +21,10 @@
 		40BA0DE02AE8358100D0CE45 /* PublisherSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DDF2AE8358100D0CE45 /* PublisherSelectView.swift */; };
 		40BA0DE22AE838CF00D0CE45 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE12AE838CF00D0CE45 /* Publisher.swift */; };
 		40BA0DE42AE931D900D0CE45 /* AllComicsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE32AE931D900D0CE45 /* AllComicsListView.swift */; };
-		40BA0DE72AE9830600D0CE45 /* DummyComics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE62AE9830600D0CE45 /* DummyComics.swift */; };
-		40BA0DE92AE98A5F00D0CE45 /* DummyPublishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE82AE98A5F00D0CE45 /* DummyPublishers.swift */; };
+		40BA0DE72AE9830600D0CE45 /* DummyComics.json in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE62AE9830600D0CE45 /* DummyComics.json */; };
+		40BA0DE92AE98A5F00D0CE45 /* DummyPublishers.json in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE82AE98A5F00D0CE45 /* DummyPublishers.json */; };
 		40BA0DEB2AEAD5F600D0CE45 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DEA2AEAD5F600D0CE45 /* RealmManager.swift */; };
+		40BA0DED2AED8B8E00D0CE45 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DEC2AED8B8E00D0CE45 /* JSONManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,9 +60,10 @@
 		40BA0DDF2AE8358100D0CE45 /* PublisherSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherSelectView.swift; sourceTree = "<group>"; };
 		40BA0DE12AE838CF00D0CE45 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		40BA0DE32AE931D900D0CE45 /* AllComicsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllComicsListView.swift; sourceTree = "<group>"; };
-		40BA0DE62AE9830600D0CE45 /* DummyComics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyComics.swift; sourceTree = "<group>"; };
-		40BA0DE82AE98A5F00D0CE45 /* DummyPublishers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPublishers.swift; sourceTree = "<group>"; };
+		40BA0DE62AE9830600D0CE45 /* DummyComics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DummyComics.json; sourceTree = "<group>"; };
+		40BA0DE82AE98A5F00D0CE45 /* DummyPublishers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DummyPublishers.json; sourceTree = "<group>"; };
 		40BA0DEA2AEAD5F600D0CE45 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		40BA0DEC2AED8B8E00D0CE45 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				400433242AE0510900EBBB5B /* EntryPoint.swift */,
-				40BA0DE52AE9350F00D0CE45 /* Helpers */,
 				409D063C2AE2F21B00ECFF1E /* Models */,
 				409D063F2AE7E31900ECFF1E /* Views */,
+				40BA0DE52AE9350F00D0CE45 /* Helpers */,
 				400433282AE0510C00EBBB5B /* Assets.xcassets */,
 				4004334E2AE14EAB00EBBB5B /* Launch Screen.storyboard */,
 				4004332A2AE0510C00EBBB5B /* Preview Content */,
@@ -173,8 +175,9 @@
 		40BA0DE52AE9350F00D0CE45 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				40BA0DE82AE98A5F00D0CE45 /* DummyPublishers.swift */,
-				40BA0DE62AE9830600D0CE45 /* DummyComics.swift */,
+				40BA0DE82AE98A5F00D0CE45 /* DummyPublishers.json */,
+				40BA0DE62AE9830600D0CE45 /* DummyComics.json */,
+				40BA0DEC2AED8B8E00D0CE45 /* JSONManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -317,13 +320,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40BA0DE72AE9830600D0CE45 /* DummyComics.swift in Sources */,
+				40BA0DE72AE9830600D0CE45 /* DummyComics.json in Sources */,
 				400433272AE0510900EBBB5B /* ComicsListView.swift in Sources */,
 				40BA0DE02AE8358100D0CE45 /* PublisherSelectView.swift in Sources */,
+				40BA0DED2AED8B8E00D0CE45 /* JSONManager.swift in Sources */,
 				40BA0DE42AE931D900D0CE45 /* AllComicsListView.swift in Sources */,
 				409D063E2AE2F29D00ECFF1E /* Comic.swift in Sources */,
 				40BA0DEB2AEAD5F600D0CE45 /* RealmManager.swift in Sources */,
-				40BA0DE92AE98A5F00D0CE45 /* DummyPublishers.swift in Sources */,
+				40BA0DE92AE98A5F00D0CE45 /* DummyPublishers.json in Sources */,
 				400433252AE0510900EBBB5B /* EntryPoint.swift in Sources */,
 				40BA0DE22AE838CF00D0CE45 /* Publisher.swift in Sources */,
 			);

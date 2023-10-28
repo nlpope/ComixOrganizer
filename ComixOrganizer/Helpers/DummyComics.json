@@ -1,13 +1,3 @@
-//
-//  DummyComics.swift
-//  ComixOrganizer
-//
-//  Created by Noah Pope on 10/25/23.
-//
-
-import Foundation
-
-let marvelTestSet = """
 {
     "publisher": "Marvel",
     "title": Amazing Spider-Man,
@@ -27,7 +17,6 @@ let marvelTestSet = """
     "releaseDate": August 2019,
 }
 
-"""
 
 
-//source: https://medium.com/swlh/how-to-work-with-json-in-swift-83cd93a837e
+

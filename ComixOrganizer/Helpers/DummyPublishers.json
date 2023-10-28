@@ -1,13 +1,3 @@
-//
-//  DummyPublishers.swift
-//  ComixOrganizer
-//
-//  Created by Noah Pope on 10/25/23.
-//
-
-import Foundation
-
-let publisherTestSet = """
 {
     "name": "Marvel",
     "comics": "List<Comic>"
@@ -24,7 +14,5 @@ let publisherTestSet = """
     "name": "Milestone",
     "comics": "List<Comic>"
 }
-"""
 
-// @Persisted var name: String
-// @Persisted var comics: List<Comic>
+
