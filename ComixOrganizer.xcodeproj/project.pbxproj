@@ -97,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				40BA0DEA2AEAD5F600D0CE45 /* RealmManager.swift */,
+				40BA0DEC2AED8B8E00D0CE45 /* JSONManager.swift */,
 				400433232AE0510900EBBB5B /* ComixOrganizer */,
 				400433342AE0510D00EBBB5B /* ComixOrganizerTests */,
 				4004333E2AE0510D00EBBB5B /* ComixOrganizerUITests */,
@@ -177,7 +178,6 @@
 			children = (
 				40BA0DE82AE98A5F00D0CE45 /* DummyPublishers.json */,
 				40BA0DE62AE9830600D0CE45 /* DummyComics.json */,
-				40BA0DEC2AED8B8E00D0CE45 /* JSONManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
