@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 class RealmManager: ObservableObject {
-    private(set) var realm: Realm?
+    private(set) var localRealm: Realm?
     init(name: String) {
         initializeSchema(name: name)
     }
@@ -34,7 +34,7 @@ class RealmManager: ObservableObject {
         Realm.Configuration.defaultConfiguration = config
         print("docDir path = ", docDir.path)
         do {
-            realm = try Realm()
+            localRealm = try Realm()
         } catch {
             print("error loading default Realm:", error)
         }

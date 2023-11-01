@@ -18,9 +18,11 @@ struct PublisherSelectView: View {
                 List {
                     //start here
                     ForEach(publishers.sorted(byKeyPath: "name")) { publisher in
-                        ComicsListView(publisher: publisher)
-                    } label: {
-                        TextField("link to all \(publisher) comics")
+                        NavigationLink {
+                            ComicsListView(publisher: publisher)
+                        }  label: {
+                            Text("link to all \(publisher) comics")
+                        }
                     }
                 }
                 .listStyle(.plain)

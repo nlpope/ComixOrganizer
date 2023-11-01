@@ -21,10 +21,9 @@
 		40BA0DE02AE8358100D0CE45 /* PublisherSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DDF2AE8358100D0CE45 /* PublisherSelectView.swift */; };
 		40BA0DE22AE838CF00D0CE45 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE12AE838CF00D0CE45 /* Publisher.swift */; };
 		40BA0DE42AE931D900D0CE45 /* AllComicsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE32AE931D900D0CE45 /* AllComicsListView.swift */; };
-		40BA0DE72AE9830600D0CE45 /* DummyComics.json in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE62AE9830600D0CE45 /* DummyComics.json */; };
-		40BA0DE92AE98A5F00D0CE45 /* DummyPublishers.json in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE82AE98A5F00D0CE45 /* DummyPublishers.json */; };
 		40BA0DEB2AEAD5F600D0CE45 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DEA2AEAD5F600D0CE45 /* RealmManager.swift */; };
 		40BA0DED2AED8B8E00D0CE45 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DEC2AED8B8E00D0CE45 /* JSONManager.swift */; };
+		40BA0DEF2AF1217400D0CE45 /* ComicRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DEE2AF1217400D0CE45 /* ComicRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +59,9 @@
 		40BA0DDF2AE8358100D0CE45 /* PublisherSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherSelectView.swift; sourceTree = "<group>"; };
 		40BA0DE12AE838CF00D0CE45 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		40BA0DE32AE931D900D0CE45 /* AllComicsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllComicsListView.swift; sourceTree = "<group>"; };
-		40BA0DE62AE9830600D0CE45 /* DummyComics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DummyComics.json; sourceTree = "<group>"; };
-		40BA0DE82AE98A5F00D0CE45 /* DummyPublishers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DummyPublishers.json; sourceTree = "<group>"; };
 		40BA0DEA2AEAD5F600D0CE45 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		40BA0DEC2AED8B8E00D0CE45 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		40BA0DEE2AF1217400D0CE45 /* ComicRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,8 +155,8 @@
 		409D063C2AE2F21B00ECFF1E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				409D063D2AE2F29D00ECFF1E /* Comic.swift */,
 				40BA0DE12AE838CF00D0CE45 /* Publisher.swift */,
+				409D063D2AE2F29D00ECFF1E /* Comic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,6 +167,7 @@
 				400433262AE0510900EBBB5B /* ComicsListView.swift */,
 				40BA0DE32AE931D900D0CE45 /* AllComicsListView.swift */,
 				40BA0DDF2AE8358100D0CE45 /* PublisherSelectView.swift */,
+				40BA0DEE2AF1217400D0CE45 /* ComicRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,8 +175,6 @@
 		40BA0DE52AE9350F00D0CE45 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				40BA0DE82AE98A5F00D0CE45 /* DummyPublishers.json */,
-				40BA0DE62AE9830600D0CE45 /* DummyComics.json */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -320,14 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40BA0DE72AE9830600D0CE45 /* DummyComics.json in Sources */,
+				40BA0DEF2AF1217400D0CE45 /* ComicRowView.swift in Sources */,
 				400433272AE0510900EBBB5B /* ComicsListView.swift in Sources */,
 				40BA0DE02AE8358100D0CE45 /* PublisherSelectView.swift in Sources */,
 				40BA0DED2AED8B8E00D0CE45 /* JSONManager.swift in Sources */,
 				40BA0DE42AE931D900D0CE45 /* AllComicsListView.swift in Sources */,
 				409D063E2AE2F29D00ECFF1E /* Comic.swift in Sources */,
 				40BA0DEB2AEAD5F600D0CE45 /* RealmManager.swift in Sources */,
-				40BA0DE92AE98A5F00D0CE45 /* DummyPublishers.json in Sources */,
 				400433252AE0510900EBBB5B /* EntryPoint.swift in Sources */,
 				40BA0DE22AE838CF00D0CE45 /* Publisher.swift in Sources */,
 			);

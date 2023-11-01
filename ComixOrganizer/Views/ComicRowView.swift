@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ComicRowView: View {
+    var comic: String
+    var completed: Bool
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 20) {
+            Text(comic)
+            Image(systemName: completed ? "checkmark.circle" : "circle")
+        }
     }
 }
 
 #Preview {
-    ComicRowView()
+    ComicRowView(comic: "Amazing Spiderman #1", completed: true)
 }

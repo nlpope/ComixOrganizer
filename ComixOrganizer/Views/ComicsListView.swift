@@ -13,6 +13,10 @@ struct ComicsListView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("All Comics")
+                    .font(.title3).bold()
+                    .padding()
+                    .frame(width: .infinity, alignment: .leading)
                 List {
                     ForEach(publisher.comics) { comic in
                         Text(comic.title)
