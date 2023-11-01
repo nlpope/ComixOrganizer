@@ -10,10 +10,7 @@ import SwiftUI
 @main
 struct EntryPoint: App {
     @StateObject var realmManager = RealmManager(name: "schema 2")
-    //start @ Publisher Select View
-    //then on to titles (in alpha order) under said Publisher
-    //> filterable by character
-    //then on to runs & volumes in order of release date
+    
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -22,6 +19,7 @@ struct EntryPoint: App {
                     .tabItem {
                         Label("Publishers", systemImage: "list.dash")
                     }
+                    .environmentObject(realmManager)
                 
                 AllComicsListView()
                     .tabItem {
@@ -30,7 +28,7 @@ struct EntryPoint: App {
                 
             }
             .onAppear {
-                print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!)
+                print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
             }
         }
     }

@@ -12,7 +12,7 @@ import RealmSwift
 class Comic: Object, ObjectKeyIdentifiable, Codable {
     //@Persisted = "I'm stored by realm"
     @Persisted(primaryKey: true) var id: ObjectId
-    @Persisted var publisher: Publisher
+    @Persisted var publisher: Publisher?
     //not sure if publisher:Publisher works over publisher:String when parsing the JSON
     @Persisted var title: String
     @Persisted var issue: Int = 1
