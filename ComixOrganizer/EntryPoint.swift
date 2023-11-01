@@ -25,10 +25,10 @@ struct EntryPoint: App {
                     .tabItem {
                         Label("Comics", systemImage: "list.dash")
                     }
-                
             }
             .onAppear {
-                print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
+                UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+//                print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
             }
         }
     }
