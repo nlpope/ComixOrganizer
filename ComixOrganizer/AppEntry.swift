@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct EntryPoint: App {
+struct AppEntry: App {
     @StateObject var realmManager = RealmManager(name: "schema 2")
     
     var body: some Scene {
@@ -35,7 +35,12 @@ struct EntryPoint: App {
 }
 
 /**
- edit this boilerplate using: cmd + shift + L
+ > edit this boilerplate using: cmd + shift + L
+ > hide/reveal debug area = cmd + shift + Y
+ > hide/reveal console = cmd + shift + C
+ > hide/reveal left pane = cmd + 0
+ > hide/reveal right pane = cmd + shift + 0
+ > hide/reveal preview window = cmd + shift + enter
  --------------------------
  NOTES:
  //JSON lesson sources:
@@ -46,3 +51,5 @@ struct EntryPoint: App {
 
  --------------------------
  */
+
+

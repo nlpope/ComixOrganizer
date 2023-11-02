@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		400433252AE0510900EBBB5B /* EntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400433242AE0510900EBBB5B /* EntryPoint.swift */; };
+		400433252AE0510900EBBB5B /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400433242AE0510900EBBB5B /* AppEntry.swift */; };
 		400433272AE0510900EBBB5B /* ComicsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400433262AE0510900EBBB5B /* ComicsListView.swift */; };
 		400433292AE0510C00EBBB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400433282AE0510C00EBBB5B /* Assets.xcassets */; };
 		4004332C2AE0510C00EBBB5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4004332B2AE0510C00EBBB5B /* Preview Assets.xcassets */; };
@@ -45,7 +45,7 @@
 
 /* Begin PBXFileReference section */
 		400433212AE0510900EBBB5B /* ComixOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComixOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		400433242AE0510900EBBB5B /* EntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPoint.swift; sourceTree = "<group>"; };
+		400433242AE0510900EBBB5B /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		400433262AE0510900EBBB5B /* ComicsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsListView.swift; sourceTree = "<group>"; };
 		400433282AE0510C00EBBB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4004332B2AE0510C00EBBB5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		400433232AE0510900EBBB5B /* ComixOrganizer */ = {
 			isa = PBXGroup;
 			children = (
-				400433242AE0510900EBBB5B /* EntryPoint.swift */,
+				400433242AE0510900EBBB5B /* AppEntry.swift */,
 				409D063C2AE2F21B00ECFF1E /* Models */,
 				409D063F2AE7E31900ECFF1E /* Views */,
 				40BA0DE52AE9350F00D0CE45 /* Helpers */,
@@ -324,7 +324,7 @@
 				40BA0DE42AE931D900D0CE45 /* AllComicsListView.swift in Sources */,
 				409D063E2AE2F29D00ECFF1E /* Comic.swift in Sources */,
 				40BA0DEB2AEAD5F600D0CE45 /* RealmManager.swift in Sources */,
-				400433252AE0510900EBBB5B /* EntryPoint.swift in Sources */,
+				400433252AE0510900EBBB5B /* AppEntry.swift in Sources */,
 				40BA0DE22AE838CF00D0CE45 /* Publisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
