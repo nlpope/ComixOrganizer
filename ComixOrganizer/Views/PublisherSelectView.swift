@@ -16,14 +16,18 @@ struct PublisherSelectView: View {
         NavigationView {
             VStack {
                 List {
-                    //start here
-                    ForEach(publishers.sorted(byKeyPath: "name")) { publisher in
-                        NavigationLink {
-                            ComicsListView(publisher: publisher)
-                        }  label: {
-                            Text("link to all \(publisher) comics")
-                        }
-                    }
+                    Text("DC")
+                    Text("Image")
+                    Text("Milestone")
+                    Text("Marvel")
+                    
+//                    ForEach(publishers.sorted(byKeyPath: "name")) { publisher in
+//                        NavigationLink {
+//                            ComicsListView(publisher: publisher)
+//                        }  label: {
+//                            Text("link to all \(publisher) comics")
+//                        }
+//                    }
                 }
                 .listStyle(.plain)
             }
