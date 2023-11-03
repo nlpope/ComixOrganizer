@@ -9,9 +9,10 @@ import SwiftUI
 import RealmSwift
 
 struct PublisherSelectView: View {
-    //static var array: [CountryInfo]
     @ObservedResults(Publisher.self) var publishers//how to make this an array n stick json in it
     @State private var searchFilter = ""
+    //add array of 4 publishers here (dc, image, milestone, marvel)
+//    private var publisherArray = [
     var body: some View {
         NavigationView {
             VStack {

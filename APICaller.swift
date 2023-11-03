@@ -1,11 +1,33 @@
 //
-//  JSONManager.swift
+//  APICaller.swift
 //  ComixOrganizer
 //
 //  Created by Noah Pope on 10/28/23.
 //
 
 import Foundation
+
+struct Constants {
+    static let API_KEY = "TBD"
+    static let baseURL = "https://metron.cloud/api"
+}
+
+enum APIError: Error {
+    case failedToGetData
+}
+
+class APICaller {
+    static let shared = APICaller()
+    
+    func getPublishers(completion: @escaping (Result<[Publisher], Error>) -> Void) {
+        
+    }
+
+}
+
+
+
+
 
 
 

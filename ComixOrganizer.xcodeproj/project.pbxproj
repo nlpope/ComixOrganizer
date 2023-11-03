@@ -22,7 +22,7 @@
 		40BA0DE22AE838CF00D0CE45 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE12AE838CF00D0CE45 /* Publisher.swift */; };
 		40BA0DE42AE931D900D0CE45 /* AllComicsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DE32AE931D900D0CE45 /* AllComicsListView.swift */; };
 		40BA0DEB2AEAD5F600D0CE45 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DEA2AEAD5F600D0CE45 /* RealmManager.swift */; };
-		40BA0DED2AED8B8E00D0CE45 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DEC2AED8B8E00D0CE45 /* JSONManager.swift */; };
+		40BA0DED2AED8B8E00D0CE45 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DEC2AED8B8E00D0CE45 /* APICaller.swift */; };
 		40BA0DEF2AF1217400D0CE45 /* ComicRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA0DEE2AF1217400D0CE45 /* ComicRowView.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +60,7 @@
 		40BA0DE12AE838CF00D0CE45 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		40BA0DE32AE931D900D0CE45 /* AllComicsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllComicsListView.swift; sourceTree = "<group>"; };
 		40BA0DEA2AEAD5F600D0CE45 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
-		40BA0DEC2AED8B8E00D0CE45 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		40BA0DEC2AED8B8E00D0CE45 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		40BA0DEE2AF1217400D0CE45 /* ComicRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				40BA0DEA2AEAD5F600D0CE45 /* RealmManager.swift */,
-				40BA0DEC2AED8B8E00D0CE45 /* JSONManager.swift */,
+				40BA0DEC2AED8B8E00D0CE45 /* APICaller.swift */,
 				400433232AE0510900EBBB5B /* ComixOrganizer */,
 				400433342AE0510D00EBBB5B /* ComixOrganizerTests */,
 				4004333E2AE0510D00EBBB5B /* ComixOrganizerUITests */,
@@ -320,7 +320,7 @@
 				40BA0DEF2AF1217400D0CE45 /* ComicRowView.swift in Sources */,
 				400433272AE0510900EBBB5B /* ComicsListView.swift in Sources */,
 				40BA0DE02AE8358100D0CE45 /* PublisherSelectView.swift in Sources */,
-				40BA0DED2AED8B8E00D0CE45 /* JSONManager.swift in Sources */,
+				40BA0DED2AED8B8E00D0CE45 /* APICaller.swift in Sources */,
 				40BA0DE42AE931D900D0CE45 /* AllComicsListView.swift in Sources */,
 				409D063E2AE2F29D00ECFF1E /* Comic.swift in Sources */,
 				40BA0DEB2AEAD5F600D0CE45 /* RealmManager.swift in Sources */,
