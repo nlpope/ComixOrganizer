@@ -20,7 +20,7 @@ class APICaller {
     static let shared = APICaller()
     
     func getPublishers(completion: @escaping (Result<[Publisher], Error>) -> Void) {
-        
+        guard let url = URL(string: "\(Constants.baseURL)/publisher") else {return}
     }
 
 }
