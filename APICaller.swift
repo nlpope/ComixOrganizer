@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct Constants {
     static let API_KEY = "TBD"
@@ -19,13 +20,26 @@ enum APIError: Error {
 class APICaller {
     static let shared = APICaller()
     
-    func getPublishers(completion: @escaping (Result<[Publisher], Error>) -> Void) {
+    func getPublishers(completion: @escaping (Result<List<Publisher>, Error>) -> Void) {
         guard let url = URL(string: "\(Constants.baseURL)/publisher") else {return}
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
+            guard let data = data, error == nil else {return}
+            
+            do {
+                let results = try JSONDecoder().decode(Publisher.self, from: data)
+                completion(.success(results.results))
+                print(results)
+            } catch {
+                //instead of printing the err, we're passing in a failure to handle it directly from home viewcontroller
+                completion(.failure(APIError.failedToGetData))
+            }
+        }
+        
+        task.resume()
     }
 
 }
-
-
 
 
 

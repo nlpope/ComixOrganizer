@@ -8,8 +8,15 @@
 import Foundation
 import RealmSwift
 
+//struct PublisherResponse: Decodable {
+//    let results: [Publisher]
+//}
+
 class Publisher: Object, ObjectKeyIdentifiable, Codable {
     @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var name: String
     @Persisted var comics: List<Comic>
+    @Persisted var results: List<Publisher>
 }
+
+
