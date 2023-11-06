@@ -27,7 +27,7 @@ class APICaller {
             guard let data = data, error == nil else {return}
             
             do {
-                let results = try JSONDecoder().decode(Publisher.self, from: data)
+                let results = try JSONDecoder().decode(PublisherResponse.self, from: data)
                 completion(.success(results.results))
                 print(results)
             } catch {
